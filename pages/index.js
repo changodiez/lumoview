@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 import ProTip from '../src/ProTip';
 import Link from '../src/Link';
 import Copyright from '../src/Copyright';
+import { ButtonGroup } from '@material-ui/core';
 
 export default function Index() {
   return (
@@ -20,10 +21,13 @@ export default function Index() {
       <Container maxWidth="sm">
         <Typography variant="subtitle1" color="textSecondary" paragraph={true} >Suspendisse aliquam tellus ante, porttitor mattis diam eleifend quis. Pellentesque pulvinar commodo eros sit amet finibus.</Typography>
       </Container>
-      <Box mt={3}>
-        <Button variant="contained" color="secondary" >Action</Button>
-        <Button variant="outlined" color="secondary" >Action</Button>
-      </Box>
+      <ProTip />
+      <Link href="#" >HOLA PANCHO</Link>
+      <Copyright></Copyright>
+      <ButtonGroup mt={3}>
+        <Button variant="contained" color="secondary" >secondary</Button>
+        <Button variant="contained" color="primary" >Primary</Button>
+      </ButtonGroup>
     </Box>
     </Container>
 </section>

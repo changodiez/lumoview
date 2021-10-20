@@ -14,7 +14,7 @@ export default function Index() {
   <Container maxWidth="md">
     <Box textAlign="center" color="common.white">
       <Typography variant="h2" component="h2" gutterBottom={true}>
-        <Typography color="secondary" variant="h2" component="span">Lorem ipsum dolor </Typography>
+        <Typography color="secondary" variant="h2" component="span">Milton apesta </Typography>
         <Typography variant="h2" component="span">sit amet, consectetur adipiscing elit.</Typography>
       </Typography>
       <Container maxWidth="sm">

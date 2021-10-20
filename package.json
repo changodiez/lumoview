@@ -3,17 +3,20 @@
     "version": "4.0.0",
     "private": true,
     "dependencies": {
-      "@material-ui/core": "latest",
-      "clsx": "latest",
-      "next": "latest",
-      "prop-types": "latest",
-      "react": "latest",
-      "react-dom": "latest"
+        "@material-ui/core": "latest",
+        "@sanity/block-content-to-react": "^2.0.7",
+        "@sanity/client": "^2.21.3",
+        "clsx": "latest",
+        "next": "latest",
+        "next-sanity-extra": "^0.2.3",
+        "prop-types": "latest",
+        "react": "latest",
+        "react-dom": "latest"
     },
     "scripts": {
-      "dev": "next",
-      "build": "next build",
-      "start": "next start",
-      "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
     }
-  }
+}

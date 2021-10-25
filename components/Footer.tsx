@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Navbar(props) {
+function Footer(props) {
   const { logo, spaced, ...otherProps } = props;
   const classes = useStyles(); 
   const theme = useTheme();
@@ -84,9 +84,12 @@ function Navbar(props) {
     <div className={classes.wrapper} {...otherProps}>
       <Container component="nav">
         <Toolbar variant={spaced ? "regular" : "dense"} disableGutters>
-          <Link href="/" >
+          <div>
+
+          <Link href="/">
             <img className={classes.image} src={Logo} alt="Logo" />
           </Link>
+          </div>
           <div className={classes.spacer} />
          
           {true && (
@@ -104,40 +107,10 @@ function Navbar(props) {
                 </IconButton>
               </Hidden>
               <Hidden xsDown>
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                <div className={classes.Navlink}>
-                    <Link href="/">About us</Link>
-                  </div>
-                  <div className={classes.Navlink}>
-                    <Link href="/">Product</Link>
-                  </div>
-                  <div className={classes.Navlink}>
-                    <Link href="/">Teams</Link>
-                  </div>
-                  <div className={classes.Navlink}>
-                    <Link href="/">News</Link>
-                  </div>
-                  <Button
-                    aria-label="User account"
-                    aria-controls="appbar-menu"
-                    aria-haspopup="true"
-                    onClick={handleOpenMenu}
-                    className={classes.button}
-                  >
-                    CONTACT US
-                    {/* <ExpandMoreIcon className={classes.buttonIcon} /> */}
-                  </Button>
-                  <Button
-                    aria-label="User account"
-                    aria-controls="appbar-menu"
-                    aria-haspopup="true"
-                    onClick={handleOpenMenu}
-                    className={classes.button}
-                  >
-                    LOGIN
-                    {/* <ExpandMoreIcon className={classes.buttonIcon} /> */}
-                  </Button>
+                <div style={{ display: "flex", flexDirection: "row", width:'50%', margin:'0 auto' }}>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                 </div>
+            
               </Hidden>
               {xSmall ? (
                 <Dialog
@@ -200,9 +173,9 @@ function Navbar(props) {
   );
 }
 
-Navbar.propTypes = {
+Footer.propTypes = {
   logo: PropTypes.string,
   spaced: PropTypes.bool,
 };
 
-export default Navbar;
+export default Footer;

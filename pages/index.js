@@ -15,17 +15,16 @@ import BlockContent from "@sanity/block-content-to-react";
 import React from "react";
 import client from "../lib/sanity";
 import useStyles from "../src/styles";
-import Link from '../src/Link';
+import Link from "../src/Link";
+import VideoHero from "../components/VideoHero.tsx";
 
 export default function Index({ data }) {
   const classes = useStyles();
   return (
     <div>
-      <AppBar position="static" color="inherit">
-  
-  
-</AppBar>
-      <section
+      <AppBar position="static" color="inherit"></AppBar>
+      <VideoHero></VideoHero>
+      {/* <section
         style={{ backgroundImage: 'url("nereus-assets/img/bg/pattern2.png")' }}
       >
         <Container maxWidth="md">
@@ -56,7 +55,7 @@ export default function Index({ data }) {
             </Box>
           </Box>
         </Container>
-      </section>
+      </section> */}
     </div>
   );
 }

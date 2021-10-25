@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import Navbar from "../components/Navbar.tsx";
+import Footer from "../components/Footer.tsx";
 import '../styles/styles.css';
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -28,6 +29,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Navbar spaced={true} logo={'https://res.cloudinary.com/grountish/image/upload/v1626791589/Captura_de_pantalla_2021-07-20_a_las_16.28.12_m0fztp.png'} />
         <Component {...pageProps} />
+        <Footer></Footer>
       </ThemeProvider>
     </React.Fragment>
   );

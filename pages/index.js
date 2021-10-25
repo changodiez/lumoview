@@ -22,27 +22,7 @@ export default function Index({ data }) {
   return (
     <div>
       <AppBar position="static" color="inherit">
-  <Toolbar className={classes.toolbar}>
-    <Link href="#" color="primary" underline="none" variant="h5" className={classes.brand}>
-      <img src="nereus-assets/img/nereus-light.png" alt="" width="110" />
-    </Link>
-    <Link href="#" color="textPrimary" variant="body2" className={classes.link}>
-      Section One
-    </Link>
-    <Link href="#" color="textPrimary" variant="body2" className={classes.link}>
-      Section Two
-    </Link>
-    <Link href="#" color="textPrimary" variant="body2" className={classes.link}>
-      Section Three
-    </Link>
-    <Link href="#" color="textPrimary" variant="body2" className={classes.link}>
-      Section Four
-    </Link>
-    <Button variant="contained" color="secondary" className={classes.primaryAction}>Action</Button>
-    <IconButton edge="start" color="inherit" aria-label="menu" className={classes.menuButton} >
-      <MenuIcon />
-    </IconButton>
-  </Toolbar>
+  
   
 </AppBar>
       <section

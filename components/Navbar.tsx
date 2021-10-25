@@ -101,7 +101,7 @@ function Navbar(props) {
                   onClick={handleOpenMenu}
                   color="inherit"
                 >
-                 🍔s
+                 🍔
                   {/* <MenuIcon /> */}
                 </IconButton>
               </Hidden>

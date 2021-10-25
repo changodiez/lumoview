@@ -17,6 +17,7 @@ import client from "../lib/sanity";
 import useStyles from "../src/styles";
 import Link from "../src/Link";
 import VideoHero from "../components/VideoHero.tsx";
+import Hero from "../components/Hero.tsx";
 
 export default function Index({ data }) {
   const classes = useStyles();
@@ -24,6 +25,17 @@ export default function Index({ data }) {
     <div>
       <AppBar position="static" color="inherit"></AppBar>
       <VideoHero></VideoHero>
+      <Hero
+        color="white"
+        size="medium"
+        title="Deliver Knowledge With Fun"
+        subtitle="Aim to provide a easy-use product for learns from all kinds of fields with near-zero efforts to setup their own website."
+        buttonText="Get Started"
+        image={'ui'}
+        buttonOnClick={() => {
+          router.push("/pricing");
+        }}
+      />
       {/* <section
         style={{ backgroundImage: 'url("nereus-assets/img/bg/pattern2.png")' }}
       >

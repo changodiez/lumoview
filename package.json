@@ -23,7 +23,7 @@
         "prop-types": "latest",
         "react": "latest",
         "react-dom": "latest",
-        "webpack": "^5.59.1"
+        "webpack": "latest"
     },
     "scripts": {
         "dev": "next",

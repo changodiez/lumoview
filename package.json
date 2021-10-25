@@ -32,6 +32,7 @@
         "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
     },
     "devDependencies": {
-        "@babel/preset-react": "^7.14.5"
+        "@babel/preset-react": "^7.14.5",
+        "webpack-livereload-plugin": "^3.0.2"
     }
 }
